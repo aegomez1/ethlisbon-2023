@@ -31,8 +31,8 @@ var (
 
 // IndexMetaData contains all meta data concerning the Index contract.
 var IndexMetaData = &bind.MetaData{
-	ABI: "[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"contractAddress\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"string\",\"name\":\"ipfsCID\",\"type\":\"string\"}],\"name\":\"SubmissionAdded\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"contractAddr\",\"type\":\"address\"},{\"internalType\":\"string\",\"name\":\"cid\",\"type\":\"string\"}],\"name\":\"addSubmission\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"submissionMap\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"contractAddress\",\"type\":\"address\"},{\"internalType\":\"string\",\"name\":\"ipfsCID\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"}]",
-	Bin: "0x608060405234801561000f575f80fd5b5061086a8061001d5f395ff3fe608060405234801561000f575f80fd5b5060043610610034575f3560e01c80636bae848414610038578063ad22f70b14610054575b5f80fd5b610052600480360381019061004d9190610406565b610085565b005b61006e60048036038101906100699190610460565b61019b565b60405161007c929190610514565b60405180910390f35b60405180604001604052808373ffffffffffffffffffffffffffffffffffffffff168152602001828152505f808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020015f205f820151815f015f6101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555060208201518160010190816101459190610745565b509050508173ffffffffffffffffffffffffffffffffffffffff167f3840d88f03a647ee04696cbde6b92a0acb6ba6dd37470c27b86536392f8f7e478260405161018f9190610814565b60405180910390a25050565b5f602052805f5260405f205f91509050805f015f9054906101000a900473ffffffffffffffffffffffffffffffffffffffff16908060010180546101de9061056f565b80601f016020809104026020016040519081016040528092919081815260200182805461020a9061056f565b80156102555780601f1061022c57610100808354040283529160200191610255565b820191905f5260205f20905b81548152906001019060200180831161023857829003601f168201915b5050505050905082565b5f604051905090565b5f80fd5b5f80fd5b5f73ffffffffffffffffffffffffffffffffffffffff82169050919050565b5f61029982610270565b9050919050565b6102a98161028f565b81146102b3575f80fd5b50565b5f813590506102c4816102a0565b92915050565b5f80fd5b5f80fd5b5f601f19601f8301169050919050565b7f4e487b71000000000000000000000000000000000000000000000000000000005f52604160045260245ffd5b610318826102d2565b810181811067ffffffffffffffff82111715610337576103366102e2565b5b80604052505050565b5f61034961025f565b9050610355828261030f565b919050565b5f67ffffffffffffffff821115610374576103736102e2565b5b61037d826102d2565b9050602081019050919050565b828183375f83830152505050565b5f6103aa6103a58461035a565b610340565b9050828152602081018484840111156103c6576103c56102ce565b5b6103d184828561038a565b509392505050565b5f82601f8301126103ed576103ec6102ca565b5b81356103fd848260208601610398565b91505092915050565b5f806040838503121561041c5761041b610268565b5b5f610429858286016102b6565b925050602083013567ffffffffffffffff81111561044a5761044961026c565b5b610456858286016103d9565b9150509250929050565b5f6020828403121561047557610474610268565b5b5f610482848285016102b6565b91505092915050565b6104948161028f565b82525050565b5f81519050919050565b5f82825260208201905092915050565b5f5b838110156104d15780820151818401526020810190506104b6565b5f8484015250505050565b5f6104e68261049a565b6104f081856104a4565b93506105008185602086016104b4565b610509816102d2565b840191505092915050565b5f6040820190506105275f83018561048b565b818103602083015261053981846104dc565b90509392505050565b7f4e487b71000000000000000000000000000000000000000000000000000000005f52602260045260245ffd5b5f600282049050600182168061058657607f821691505b60208210810361059957610598610542565b5b50919050565b5f819050815f5260205f209050919050565b5f6020601f8301049050919050565b5f82821b905092915050565b5f600883026105fb7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff826105c0565b61060586836105c0565b95508019841693508086168417925050509392505050565b5f819050919050565b5f819050919050565b5f61064961064461063f8461061d565b610626565b61061d565b9050919050565b5f819050919050565b6106628361062f565b61067661066e82610650565b8484546105cc565b825550505050565b5f90565b61068a61067e565b610695818484610659565b505050565b5b818110156106b8576106ad5f82610682565b60018101905061069b565b5050565b601f8211156106fd576106ce8161059f565b6106d7846105b1565b810160208510156106e6578190505b6106fa6106f2856105b1565b83018261069a565b50505b505050565b5f82821c905092915050565b5f61071d5f1984600802610702565b1980831691505092915050565b5f610735838361070e565b9150826002028217905092915050565b61074e8261049a565b67ffffffffffffffff811115610767576107666102e2565b5b610771825461056f565b61077c8282856106bc565b5f60209050601f8311600181146107ad575f841561079b578287015190505b6107a5858261072a565b86555061080c565b601f1984166107bb8661059f565b5f5b828110156107e2578489015182556001820191506020850194506020810190506107bd565b868310156107ff57848901516107fb601f89168261070e565b8355505b6001600288020188555050505b505050505050565b5f6020820190508181035f83015261082c81846104dc565b90509291505056fea2646970667358221220068031f96e7471b4728d63d3de211ee0d259825f3d2237902d5672ea3ab4154764736f6c63430008140033",
+	ABI: "[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[],\"name\":\"getIPFSCID\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"ipfsCID\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"}]",
+	Bin: "0x608060405234801561000f575f80fd5b506040518060600160405280602e815260200161061d602e91395f90816100369190610276565b50610345565b5f81519050919050565b7f4e487b71000000000000000000000000000000000000000000000000000000005f52604160045260245ffd5b7f4e487b71000000000000000000000000000000000000000000000000000000005f52602260045260245ffd5b5f60028204905060018216806100b757607f821691505b6020821081036100ca576100c9610073565b5b50919050565b5f819050815f5260205f209050919050565b5f6020601f8301049050919050565b5f82821b905092915050565b5f6008830261012c7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff826100f1565b61013686836100f1565b95508019841693508086168417925050509392505050565b5f819050919050565b5f819050919050565b5f61017a6101756101708461014e565b610157565b61014e565b9050919050565b5f819050919050565b61019383610160565b6101a761019f82610181565b8484546100fd565b825550505050565b5f90565b6101bb6101af565b6101c681848461018a565b505050565b5b818110156101e9576101de5f826101b3565b6001810190506101cc565b5050565b601f82111561022e576101ff816100d0565b610208846100e2565b81016020851015610217578190505b61022b610223856100e2565b8301826101cb565b50505b505050565b5f82821c905092915050565b5f61024e5f1984600802610233565b1980831691505092915050565b5f610266838361023f565b9150826002028217905092915050565b61027f8261003c565b67ffffffffffffffff81111561029857610297610046565b5b6102a282546100a0565b6102ad8282856101ed565b5f60209050601f8311600181146102de575f84156102cc578287015190505b6102d6858261025b565b86555061033d565b601f1984166102ec866100d0565b5f5b82811015610313578489015182556001820191506020850194506020810190506102ee565b86831015610330578489015161032c601f89168261023f565b8355505b6001600288020188555050505b505050505050565b6102cb806103525f395ff3fe608060405234801561000f575f80fd5b5060043610610034575f3560e01c806349fc73dd14610038578063d5ac21c114610056575b5f80fd5b610040610074565b60405161004d9190610218565b60405180910390f35b61005e6100ff565b60405161006b9190610218565b60405180910390f35b5f805461008090610265565b80601f01602080910402602001604051908101604052809291908181526020018280546100ac90610265565b80156100f75780601f106100ce576101008083540402835291602001916100f7565b820191905f5260205f20905b8154815290600101906020018083116100da57829003601f168201915b505050505081565b60605f805461010d90610265565b80601f016020809104026020016040519081016040528092919081815260200182805461013990610265565b80156101845780601f1061015b57610100808354040283529160200191610184565b820191905f5260205f20905b81548152906001019060200180831161016757829003601f168201915b5050505050905090565b5f81519050919050565b5f82825260208201905092915050565b5f5b838110156101c55780820151818401526020810190506101aa565b5f8484015250505050565b5f601f19601f8301169050919050565b5f6101ea8261018e565b6101f48185610198565b93506102048185602086016101a8565b61020d816101d0565b840191505092915050565b5f6020820190508181035f83015261023081846101e0565b905092915050565b7f4e487b71000000000000000000000000000000000000000000000000000000005f52602260045260245ffd5b5f600282049050600182168061027c57607f821691505b60208210810361028f5761028e610238565b5b5091905056fea26469706673582212200b50918e16eed99587328ba7ec27f412d6608c179358eba505edbbf09595c16364736f6c63430008140033516d553761754a436b71774565743654745478443937786e3571344a745a4d6a704a6b787445785331476a79554b",
 }
 
 // IndexABI is the input ABI used to generate the binding from.
@@ -202,213 +202,64 @@ func (_Index *IndexTransactorRaw) Transact(opts *bind.TransactOpts, method strin
 	return _Index.Contract.contract.Transact(opts, method, params...)
 }
 
-// SubmissionMap is a free data retrieval call binding the contract method 0xad22f70b.
+// GetIPFSCID is a free data retrieval call binding the contract method 0xd5ac21c1.
 //
-// Solidity: function submissionMap(address ) view returns(address contractAddress, string ipfsCID)
-func (_Index *IndexCaller) SubmissionMap(opts *bind.CallOpts, arg0 common.Address) (struct {
-	ContractAddress common.Address
-	IpfsCID         string
-}, error) {
+// Solidity: function getIPFSCID() view returns(string)
+func (_Index *IndexCaller) GetIPFSCID(opts *bind.CallOpts) (string, error) {
 	var out []interface{}
-	err := _Index.contract.Call(opts, &out, "submissionMap", arg0)
+	err := _Index.contract.Call(opts, &out, "getIPFSCID")
 
-	outstruct := new(struct {
-		ContractAddress common.Address
-		IpfsCID         string
-	})
 	if err != nil {
-		return *outstruct, err
+		return *new(string), err
 	}
 
-	outstruct.ContractAddress = *abi.ConvertType(out[0], new(common.Address)).(*common.Address)
-	outstruct.IpfsCID = *abi.ConvertType(out[1], new(string)).(*string)
+	out0 := *abi.ConvertType(out[0], new(string)).(*string)
 
-	return *outstruct, err
+	return out0, err
 
 }
 
-// SubmissionMap is a free data retrieval call binding the contract method 0xad22f70b.
+// GetIPFSCID is a free data retrieval call binding the contract method 0xd5ac21c1.
 //
-// Solidity: function submissionMap(address ) view returns(address contractAddress, string ipfsCID)
-func (_Index *IndexSession) SubmissionMap(arg0 common.Address) (struct {
-	ContractAddress common.Address
-	IpfsCID         string
-}, error) {
-	return _Index.Contract.SubmissionMap(&_Index.CallOpts, arg0)
+// Solidity: function getIPFSCID() view returns(string)
+func (_Index *IndexSession) GetIPFSCID() (string, error) {
+	return _Index.Contract.GetIPFSCID(&_Index.CallOpts)
 }
 
-// SubmissionMap is a free data retrieval call binding the contract method 0xad22f70b.
+// GetIPFSCID is a free data retrieval call binding the contract method 0xd5ac21c1.
 //
-// Solidity: function submissionMap(address ) view returns(address contractAddress, string ipfsCID)
-func (_Index *IndexCallerSession) SubmissionMap(arg0 common.Address) (struct {
-	ContractAddress common.Address
-	IpfsCID         string
-}, error) {
-	return _Index.Contract.SubmissionMap(&_Index.CallOpts, arg0)
+// Solidity: function getIPFSCID() view returns(string)
+func (_Index *IndexCallerSession) GetIPFSCID() (string, error) {
+	return _Index.Contract.GetIPFSCID(&_Index.CallOpts)
 }
 
-// AddSubmission is a paid mutator transaction binding the contract method 0x6bae8484.
+// IpfsCID is a free data retrieval call binding the contract method 0x49fc73dd.
 //
-// Solidity: function addSubmission(address contractAddr, string cid) returns()
-func (_Index *IndexTransactor) AddSubmission(opts *bind.TransactOpts, contractAddr common.Address, cid string) (*types.Transaction, error) {
-	return _Index.contract.Transact(opts, "addSubmission", contractAddr, cid)
-}
+// Solidity: function ipfsCID() view returns(string)
+func (_Index *IndexCaller) IpfsCID(opts *bind.CallOpts) (string, error) {
+	var out []interface{}
+	err := _Index.contract.Call(opts, &out, "ipfsCID")
 
-// AddSubmission is a paid mutator transaction binding the contract method 0x6bae8484.
-//
-// Solidity: function addSubmission(address contractAddr, string cid) returns()
-func (_Index *IndexSession) AddSubmission(contractAddr common.Address, cid string) (*types.Transaction, error) {
-	return _Index.Contract.AddSubmission(&_Index.TransactOpts, contractAddr, cid)
-}
-
-// AddSubmission is a paid mutator transaction binding the contract method 0x6bae8484.
-//
-// Solidity: function addSubmission(address contractAddr, string cid) returns()
-func (_Index *IndexTransactorSession) AddSubmission(contractAddr common.Address, cid string) (*types.Transaction, error) {
-	return _Index.Contract.AddSubmission(&_Index.TransactOpts, contractAddr, cid)
-}
-
-// IndexSubmissionAddedIterator is returned from FilterSubmissionAdded and is used to iterate over the raw logs and unpacked data for SubmissionAdded events raised by the Index contract.
-type IndexSubmissionAddedIterator struct {
-	Event *IndexSubmissionAdded // Event containing the contract specifics and raw log
-
-	contract *bind.BoundContract // Generic contract to use for unpacking event data
-	event    string              // Event name to use for unpacking event data
-
-	logs chan types.Log        // Log channel receiving the found contract events
-	sub  ethereum.Subscription // Subscription for errors, completion and termination
-	done bool                  // Whether the subscription completed delivering logs
-	fail error                 // Occurred error to stop iteration
-}
-
-// Next advances the iterator to the subsequent event, returning whether there
-// are any more events found. In case of a retrieval or parsing error, false is
-// returned and Error() can be queried for the exact failure.
-func (it *IndexSubmissionAddedIterator) Next() bool {
-	// If the iterator failed, stop iterating
-	if it.fail != nil {
-		return false
-	}
-	// If the iterator completed, deliver directly whatever's available
-	if it.done {
-		select {
-		case log := <-it.logs:
-			it.Event = new(IndexSubmissionAdded)
-			if err := it.contract.UnpackLog(it.Event, it.event, log); err != nil {
-				it.fail = err
-				return false
-			}
-			it.Event.Raw = log
-			return true
-
-		default:
-			return false
-		}
-	}
-	// Iterator still in progress, wait for either a data or an error event
-	select {
-	case log := <-it.logs:
-		it.Event = new(IndexSubmissionAdded)
-		if err := it.contract.UnpackLog(it.Event, it.event, log); err != nil {
-			it.fail = err
-			return false
-		}
-		it.Event.Raw = log
-		return true
-
-	case err := <-it.sub.Err():
-		it.done = true
-		it.fail = err
-		return it.Next()
-	}
-}
-
-// Error returns any retrieval or parsing error occurred during filtering.
-func (it *IndexSubmissionAddedIterator) Error() error {
-	return it.fail
-}
-
-// Close terminates the iteration process, releasing any pending underlying
-// resources.
-func (it *IndexSubmissionAddedIterator) Close() error {
-	it.sub.Unsubscribe()
-	return nil
-}
-
-// IndexSubmissionAdded represents a SubmissionAdded event raised by the Index contract.
-type IndexSubmissionAdded struct {
-	ContractAddress common.Address
-	IpfsCID         string
-	Raw             types.Log // Blockchain specific contextual infos
-}
-
-// FilterSubmissionAdded is a free log retrieval operation binding the contract event 0x3840d88f03a647ee04696cbde6b92a0acb6ba6dd37470c27b86536392f8f7e47.
-//
-// Solidity: event SubmissionAdded(address indexed contractAddress, string ipfsCID)
-func (_Index *IndexFilterer) FilterSubmissionAdded(opts *bind.FilterOpts, contractAddress []common.Address) (*IndexSubmissionAddedIterator, error) {
-
-	var contractAddressRule []interface{}
-	for _, contractAddressItem := range contractAddress {
-		contractAddressRule = append(contractAddressRule, contractAddressItem)
-	}
-
-	logs, sub, err := _Index.contract.FilterLogs(opts, "SubmissionAdded", contractAddressRule)
 	if err != nil {
-		return nil, err
+		return *new(string), err
 	}
-	return &IndexSubmissionAddedIterator{contract: _Index.contract, event: "SubmissionAdded", logs: logs, sub: sub}, nil
+
+	out0 := *abi.ConvertType(out[0], new(string)).(*string)
+
+	return out0, err
+
 }
 
-// WatchSubmissionAdded is a free log subscription operation binding the contract event 0x3840d88f03a647ee04696cbde6b92a0acb6ba6dd37470c27b86536392f8f7e47.
+// IpfsCID is a free data retrieval call binding the contract method 0x49fc73dd.
 //
-// Solidity: event SubmissionAdded(address indexed contractAddress, string ipfsCID)
-func (_Index *IndexFilterer) WatchSubmissionAdded(opts *bind.WatchOpts, sink chan<- *IndexSubmissionAdded, contractAddress []common.Address) (event.Subscription, error) {
-
-	var contractAddressRule []interface{}
-	for _, contractAddressItem := range contractAddress {
-		contractAddressRule = append(contractAddressRule, contractAddressItem)
-	}
-
-	logs, sub, err := _Index.contract.WatchLogs(opts, "SubmissionAdded", contractAddressRule)
-	if err != nil {
-		return nil, err
-	}
-	return event.NewSubscription(func(quit <-chan struct{}) error {
-		defer sub.Unsubscribe()
-		for {
-			select {
-			case log := <-logs:
-				// New log arrived, parse the event and forward to the user
-				event := new(IndexSubmissionAdded)
-				if err := _Index.contract.UnpackLog(event, "SubmissionAdded", log); err != nil {
-					return err
-				}
-				event.Raw = log
-
-				select {
-				case sink <- event:
-				case err := <-sub.Err():
-					return err
-				case <-quit:
-					return nil
-				}
-			case err := <-sub.Err():
-				return err
-			case <-quit:
-				return nil
-			}
-		}
-	}), nil
+// Solidity: function ipfsCID() view returns(string)
+func (_Index *IndexSession) IpfsCID() (string, error) {
+	return _Index.Contract.IpfsCID(&_Index.CallOpts)
 }
 
-// ParseSubmissionAdded is a log parse operation binding the contract event 0x3840d88f03a647ee04696cbde6b92a0acb6ba6dd37470c27b86536392f8f7e47.
+// IpfsCID is a free data retrieval call binding the contract method 0x49fc73dd.
 //
-// Solidity: event SubmissionAdded(address indexed contractAddress, string ipfsCID)
-func (_Index *IndexFilterer) ParseSubmissionAdded(log types.Log) (*IndexSubmissionAdded, error) {
-	event := new(IndexSubmissionAdded)
-	if err := _Index.contract.UnpackLog(event, "SubmissionAdded", log); err != nil {
-		return nil, err
-	}
-	event.Raw = log
-	return event, nil
+// Solidity: function ipfsCID() view returns(string)
+func (_Index *IndexCallerSession) IpfsCID() (string, error) {
+	return _Index.Contract.IpfsCID(&_Index.CallOpts)
 }

@@ -2,21 +2,15 @@
 pragma solidity ^0.8.15;
 
 contract IndexContract {
-    struct SubmissionData {
-        address contractAddress;
-        string ipfsCID;
+    string public ipfsCID;
+
+    // Constructor to initialize the IPFS CID
+    constructor() {
+        ipfsCID = "QmU7auJCkqwEet6TtTxD97xn5q4JtZMjpJkxtExS1GjyUK";
     }
 
-    mapping(address => SubmissionData) public submissionMap;
-
-    // Declare an event
-    event SubmissionAdded(address indexed contractAddress, string ipfsCID);
-
-    function addSubmission(address contractAddr, string memory cid) public {
-        submissionMap[contractAddr] = SubmissionData(contractAddr, cid);
-
-
-        // Emit the SubmissionAdded event
-        emit SubmissionAdded(contractAddr, cid );
+    // Function to get the IPFS CID
+    function getIPFSCID() public view returns (string memory) {
+        return ipfsCID;
     }
 }
